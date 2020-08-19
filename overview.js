@@ -153,7 +153,7 @@ var dtpOverview = Utils.defineClass({
         function IsolatedOverview() {
             // These lines take care of Nautilus for icons on Desktop
             let activeWorkspace = Utils.DisplayWrapper.getWorkspaceManager().get_active_workspace();
-            let windows = this.get_windows().filter(w => w.get_workspace().index() == activeWorkspace.index());
+            let windows = this.get_windows();
 
             if (windows.length > 0 && 
                 (!(windows.length == 1 && windows[0].skip_taskbar) || 
