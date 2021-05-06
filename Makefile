@@ -1,6 +1,6 @@
 # Basic Makefile
 
-UUID = dash-to-panel@jderose9.github.com
+UUID = dash-to-panel@localhost
 BASE_MODULES = extension.js stylesheet.css metadata.json COPYING README.md
 EXTRA_MODULES = appIcons.js convenience.js panel.js panelManager.js proximity.js intellihide.js progress.js panelPositions.js panelSettings.js panelStyle.js overview.js taskbar.js transparency.js windowPreview.js prefs.js utils.js Settings.ui
 EXTRA_IMAGES = highlight_stacked_bg.svg highlight_stacked_bg_2.svg highlight_stacked_bg_3.svg
@@ -12,7 +12,7 @@ ifeq ($(strip $(DESTDIR)),)
 else
 	INSTALLBASE = $(DESTDIR)/usr/share/gnome-shell/extensions
 endif
-INSTALLNAME = dash-to-panel@jderose9.github.com
+INSTALLNAME = dash-to-panel@localhost
 
 # The command line passed variable VERSION is used to set the version string
 # in the metadata and in the generated zip-file. If no VERSION is passed, the
